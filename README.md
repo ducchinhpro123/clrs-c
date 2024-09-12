@@ -1,3 +1,10 @@
+# Table of Contents
+1. [Why was this repository created?](#why-was-this-repository-created?)
+2. [Insertion sort](#insertion-sort)
+    - [How it works](#how-it-works)
+
+
+
 # Why was this repository created?
 
 Hello everyone, 

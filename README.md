@@ -29,7 +29,8 @@ using it to write algorithms is a good way to learn more.
 ## Insertion sort
 
 ```c
-void insertion_sort(int *arr, int n) {
+void insertion_sort(int *arr, int n) 
+{
     for (int i = 1; i < n; i++) {
         int key = arr[i];
         int j = i - 1;

@@ -19,10 +19,10 @@ int main()
     print_array(arr, arr_size);
 
     return 0;
-
 }
 
-void insertion_sort(int *arr, int n) {
+void insertion_sort(int *arr, int n)
+{
     for (int i = 1; i < n; i++) {
         int key = arr[i];
         int j = i - 1;
@@ -32,10 +32,10 @@ void insertion_sort(int *arr, int n) {
         }
         arr[j + 1] = key;
     }
-} 
+}
 
-void print_array(int *arr, int n) {
-    for (int i = 0; i < n; i++) 
-        printf("%d ", arr[i]);
+void print_array(int *arr, int n)
+{
+    for (int i = 0; i < n; i++) printf("%d ", arr[i]);
     printf("\n");
 }

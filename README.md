@@ -18,3 +18,10 @@ void insertion_sort(int *arr, int n) {
 } 
 ```
 
+### How it works? 
+
+The image bellow is taken from CLRS book:
+
+![insertion_sort](images/illustrations/insertion_sort_illustration.png)
+
+

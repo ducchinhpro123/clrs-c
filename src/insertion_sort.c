@@ -1,22 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define ARR_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))
 
 void insertion_sort(int *arr, int n);
 void print_array(int *arr, int n);
+void generate_random_array(int arr[], int n);
 
 int main()
 {
-    int arr[] = {5, 2, 4, 6, 1, 3};
-    int arr_size = ARR_SIZE(arr);
+    int n = 100;
+    int arr[n]; 
+    generate_random_array(arr, n);
 
     printf("Original array: \n");
-    print_array(arr, arr_size);
+    print_array(arr, n);
 
-    insertion_sort(arr, arr_size); /* sorting the arr array */
+    insertion_sort(arr, n); /* sorting the arr array */
 
     printf("\nSorted array: \n");
-    print_array(arr, arr_size);
+    print_array(arr, n);
 
     return 0;
 }
@@ -36,6 +39,14 @@ void insertion_sort(int *arr, int n)
 
 void print_array(int *arr, int n)
 {
-    for (int i = 0; i < n; i++) printf("%d ", arr[i]);
+    for (int i = 0; i < n; i++) printf("%d, ", arr[i]);
     printf("\n");
+}
+
+
+void generate_random_array(int arr[], int n)
+{
+    for (int i = 0; i < n; i++) {
+        arr[i] = rand() % 100;
+    }
 }

@@ -1,12 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "sorting.c"
 
 #define ARR_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))
 
 void selection_sort(int *arr, int n);
-void print_array(int *arr, int n);
-void generate_random_array(int arr[], int n);
-void swap(int *a, int *b);
 
 int main()
 {
@@ -38,23 +35,3 @@ void selection_sort(int *arr, int n)
     }
 }
 
-void print_array(int *arr, int n)
-{
-    for (int i = 0; i < n; i++) printf("%d, ", arr[i]);
-    printf("\n");
-}
-
-void generate_random_array(int arr[], int n)
-{
-    n = n + 1;
-    for (int i = 0; i < n; i++) {
-        arr[i] = rand() % 100;
-    }
-}
-
-void swap(int *a, int *b)
-{
-    *a = *a ^ *b;
-    *b = *a ^ *b;
-    *a = *a ^ *b;
-}

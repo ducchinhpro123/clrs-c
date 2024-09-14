@@ -11,7 +11,7 @@ int main()
 {
     int n = 100;
     int arr[n]; 
-    generate_random_array(arr, n);
+    generate_random_array(arr, n); /* Generate random number from 0 to 100 */
 
     printf("Original array: \n");
     print_array(arr, n);

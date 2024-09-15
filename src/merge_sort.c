@@ -28,7 +28,7 @@ void merge_sort(int *arr, int p, int r)
         return;
     }
     
-    int q = (p + r) / 2;
+    int q = (p + r) / 2; /* Midpoint of arr[p : r] */
 
     merge_sort(arr, p, q);
     merge_sort(arr, q + 1, r);

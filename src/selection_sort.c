@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "sorting.c"
+#include <stdio.h>
 
 #define ARR_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))
 
@@ -34,4 +34,3 @@ void selection_sort(int *arr, int n)
         swap(&arr[min], &arr[i]);
     }
 }
-

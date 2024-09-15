@@ -3,11 +3,9 @@
 2. [Insertion sort](#insertion-sort)
     - [How it works](#how-it-works)
 
-
-
 # Why was this repository created?
 
-Hello everyone, 
+Hello everyone,
 
 "Introduction To Algorithm" is a good book that I am reading and am 
 very excited about. Reading is not enough for me, so I want to note 
@@ -20,11 +18,8 @@ fundamentals of a programming language without describing the algorithms
 is not enough. To understand more about a programming language, 
 using it to write algorithms is a good way to learn more.
 
-
 > [!NOTE]
 > These are the list of common sorting algorithms implemented in C
-
-
 
 ## Insertion sort
 
@@ -43,10 +38,8 @@ void insertion_sort(int *arr, int n)
 } 
 ```
 
-### How it works? 
+### How it works?
 
 The image below is taken from the CLRS book.
 
 ![insertion_sort](images/illustrations/insertion_sort_illustration.png)
-
-

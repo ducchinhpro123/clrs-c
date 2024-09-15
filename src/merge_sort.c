@@ -33,6 +33,7 @@ void merge_sort(int *arr, int p, int r)
     merge_sort(arr, p, q);
     merge_sort(arr, q + 1, r);
 
+    /* merge arr[p : q] and arr[q+1 : r] to arr[p : r] */
     merge(arr, p, q, r);
 }
 
